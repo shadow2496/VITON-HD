@@ -16,6 +16,10 @@
 
 The code and usage examples will be updated soon. Please stay tuned.
 
+```
+CUDA_VISIBLE_DEVICES=[GPU_ID] python test.py --name [NAME]
+```
+
 ## Citation
 
 If you find this work useful for your research, please cite our paper:
