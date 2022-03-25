@@ -32,7 +32,7 @@ pip install opencv-python torchgeometry
 
 ## Pre-trained networks
 
-We cannot share the training code or the collected dataset due to the commercial issue. Instead, we provide pre-trained networks and sample images from the test dataset. Please download `*.pkl` and dataset-related files from the [VITON-HD Google Drive folder](https://drive.google.com/drive/folders/0B8kXrnobEVh9fnJHX3lCZzEtd20yUVAtTk5HdWk2OVV0RGl6YXc0NWhMOTlvb1FKX3Z1OUk?resourcekey=0-OIXHrDwCX8ChjypUbJo4fQ&usp=sharing) and unzip `*.zip` files. `test.py` assumes that the downloaded files are placed in `./checkpoints/` and `./datasets/` directories.
+We **cannot share the training code or the collected dataset** due to the commercial issue. Instead, we provide pre-trained networks and sample images from the test dataset. Please download `*.pkl` and dataset-related files from the [VITON-HD Google Drive folder](https://drive.google.com/drive/folders/0B8kXrnobEVh9fnJHX3lCZzEtd20yUVAtTk5HdWk2OVV0RGl6YXc0NWhMOTlvb1FKX3Z1OUk?resourcekey=0-OIXHrDwCX8ChjypUbJo4fQ&usp=sharing) and unzip `*.zip` files. `test.py` assumes that the downloaded files are placed in `./checkpoints/` and `./datasets/` directories.
 
 ## Testing
 
