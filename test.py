@@ -13,7 +13,7 @@ from utils import gen_noise, load_checkpoint, save_images
 
 def get_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--name', type=str, required=True)
+    parser.add_argument('--name', type=str,  default='results')
 
     parser.add_argument('-b', '--batch_size', type=int, default=1)
     parser.add_argument('-j', '--workers', type=int, default=1)
