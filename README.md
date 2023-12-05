@@ -1,7 +1,6 @@
 ## VITON-HD &mdash; Official PyTorch Implementation
 
-**\*\*\*\*\* New: Our dataset is released \*\*\*\*\***<br>
-**\*\*\*\*\* New: Follow-up research by our team is available at https://github.com/sangyun884/HR-VITON \*\*\*\*\***<br>
+**\*\*\*\*\* New follow-up research by our team is available at https://github.com/rlawjdghek/StableVITON \*\*\*\*\***<br>
 
 
 ![Teaser image](./assets/teaser.png)
@@ -18,7 +17,8 @@
 
 ## Notice
 
-The training codes and preprocessing codes for person-agnostic representation will be updated soon. Please stay tuned.
+ECCV 2022 paper by our team (follow-up research): https://github.com/sangyun884/HR-VITON
+Preprocessing codes for person-agnostic representation are available at https://github.com/sangyun884/HR-VITON.
 
 ## Installation
 
