@@ -1,6 +1,12 @@
-## VITON-HD &mdash; Official PyTorch Implementation
+# VITON-HD &mdash; Official PyTorch Implementation
 
-**\*\*\*\*\* New follow-up research by our team is available at https://github.com/rlawjdghek/StableVITON \*\*\*\*\***<br>
+**\*\*\*\*\* New follow-up research by our team is available at https://github.com/rlawjdghek/PromptDresser \*\*\*\*\***<br>
+
+## Our Team's Follow-up Researches
+
+(1) PromptDresser (https://github.com/rlawjdghek/PromptDresser) - Arxiv 24.12 <br>
+(2) StableVITON (https://github.com/rlawjdghek/StableVITON) - CVPR 2024 <br>
+(3) HR-VITON (https://github.com/sangyun884/HR-VITON) - ECCV 2022 <br>
 
 
 ![Teaser image](./assets/teaser.png)
