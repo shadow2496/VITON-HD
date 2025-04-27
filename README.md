@@ -1,13 +1,12 @@
+## Our Team's Follow-up Research
+
+**1. [NEW!] PromptDresser (https://github.com/rlawjdghek/PromptDresser) - Arxiv 24.12**<br>
+2. StableVITON (https://github.com/rlawjdghek/StableVITON) - CVPR 2024<br>
+3. HR-VITON (https://github.com/sangyun884/HR-VITON) - ECCV 2022
+
 # VITON-HD &mdash; Official PyTorch Implementation
 
-**\*\*\*\*\* New follow-up research by our team is available at https://github.com/rlawjdghek/PromptDresser \*\*\*\*\***<br>
-
-## Our Team's Follow-up Researches
-
-(1) PromptDresser (https://github.com/rlawjdghek/PromptDresser) - Arxiv 24.12 <br>
-(2) StableVITON (https://github.com/rlawjdghek/StableVITON) - CVPR 2024 <br>
-(3) HR-VITON (https://github.com/sangyun884/HR-VITON) - ECCV 2022 <br>
-
+**\*\*\*\*\* 2025-04-27: The link to the dataset has been updated. We apologize for the inconvenience. \*\*\*\*\***
 
 ![Teaser image](./assets/teaser.png)
 
@@ -21,10 +20,11 @@
 
 > **Abstract:** *The task of image-based virtual try-on aims to transfer a target clothing item onto the corresponding region of a person, which is commonly tackled by fitting the item to the desired body part and fusing the warped item with the person. While an increasing number of studies have been conducted, the resolution of synthesized images is still limited to low (e.g., 256x192), which acts as the critical limitation against satisfying online consumers. We argue that the limitation stems from several challenges: as the resolution increases, the artifacts in the misaligned areas between the warped clothes and the desired clothing regions become noticeable in the final results; the architectures used in existing methods have low performance in generating high-quality body parts and maintaining the texture sharpness of the clothes. To address the challenges, we propose a novel virtual try-on method called VITON-HD that successfully synthesizes 1024x768 virtual try-on images. Specifically, we first prepare the segmentation map to guide our virtual try-on synthesis, and then roughly fit the target clothing item to a given person's body. Next, we propose ALIgnment-Aware Segment (ALIAS) normalization and ALIAS generator to handle the misaligned areas and preserve the details of 1024x768 inputs. Through rigorous comparison with existing methods, we demonstrate that VITON-HD highly surpasses the baselines in terms of synthesized image quality both qualitatively and quantitatively.*
 
-## Notice
+## Dataset
 
-ECCV 2022 paper by our team (follow-up research): https://github.com/sangyun884/HR-VITON
-Preprocessing codes for person-agnostic representation are available at https://github.com/sangyun884/HR-VITON.
+We collected a 1024×768 virtual try-on dataset for **research purposes only**.
+You can download the preprocessed dataset from [here](https://drive.google.com/file/d/1tLx8LRp-sxDp0EcYmYoV_vXdSc-jJ79w/view?usp=sharing).
+The frontal-view woman and top-clothing image pairs are split into training and test sets with 11,647 and 2,032 pairs, respectively. 
 
 ## Installation
 
@@ -44,13 +44,6 @@ conda install -y pytorch=[>=1.6.0] torchvision cudatoolkit=[>=9.2] -c pytorch
 pip install opencv-python torchgeometry
 ```
 
-## Dataset
-
-We collected 1024 x 768 virtual try-on dataset for **our research purpose only**.
-You can download a preprocessed dataset from [VITON-HD DropBox](https://www.dropbox.com/s/10bfat0kg4si1bu/zalando-hd-resized.zip?dl=0).
-The frontal view woman and top clothing image pairs are split into a training and a test set with 11,647 and 2,032 pairs, respectively. 
-
-
 ## Pre-trained networks
 
 We provide pre-trained networks and sample images from the test dataset. Please download `*.pkl` and test images from the [VITON-HD Google Drive folder](https://drive.google.com/drive/folders/0B8kXrnobEVh9fnJHX3lCZzEtd20yUVAtTk5HdWk2OVV0RGl6YXc0NWhMOTlvb1FKX3Z1OUk?resourcekey=0-OIXHrDwCX8ChjypUbJo4fQ&usp=sharing) and unzip `*.zip` files. `test.py` assumes that the downloaded files are placed in `./checkpoints/` and `./datasets/` directories.
@@ -64,6 +57,9 @@ CUDA_VISIBLE_DEVICES=[GPU_ID] python test.py --name [NAME]
 ```
 
 The results are saved in the `./results/` directory. You can change the location by specifying the `--save_dir` argument. To synthesize virtual try-on images with different pairs of a person and a clothing item, edit `./datasets/test_pairs.txt` and run the same command.
+
+> [!Note]
+> The preprocessing code for clothing-agnostic person representation differs slightly in [HR-VITON](https://github.com/sangyun884/HR-VITON).
 
 ## License
 
